@@ -1,1 +1,1 @@
-# To-do app
+![alt text](images/todo-app-console-picture.png)
