@@ -16,5 +16,17 @@ namespace To_Do_consoleApplication.src
             ToDoItem item = new ToDoItem(name,description,IsComplete);
             items.Add(item);
         }
+        //remove selectedTodo By Id(index)
+        public void DeleteTodo(int index)
+        {
+            items.RemoveAt(index);
+        }
+        //markComplete todo
+        public void MarkComplete(int index)
+        {
+            //looks in the list at the asked index
+            //looks for the IsComplete property and sets it to true.
+            items[index].IsComplete = true;
+        }
     }
 }
