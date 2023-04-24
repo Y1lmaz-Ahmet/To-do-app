@@ -12,5 +12,12 @@ namespace To_Do_consoleApplication.src
         public string Name { get; set; }
         public string Description { get; set; }
         public bool IsComplete { get; set; }
+
+        public ToDoItem(string name,string description,bool isComplete)
+        {
+            Name = name;
+            Description = description;
+            IsComplete = isComplete;
+        }
     }
 }
